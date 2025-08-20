@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --greencolor: #10bc69;
+    --headingcolor: #5f687b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "Nunito Sans";
+    margin-top: 5px;
+}
+
+header {
+    padding: 20px;
+
+}
+
+
+.navlogo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+}
+
+.logo {
+    font-size: 30px;
+
+    color: var(--headingcolor);
+}
+
+
+.navbtn ul il a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #5f687b;
+    font-weight: 600;
+    transition: all 1s ease;
+
+}
+
+.navbtn ul il a:hover {
+    color: var(--greencolor);
+}
+
+.greenbtn {
+    background-color: var(--greencolor);
+    border-radius: 30px;
+    color: white !important;
+    padding: 10px 15px !important;
+}
+
+.hero {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: calc(100vh-51px);
+}
+
+h1 {
+    color: var(--headingcolor);
+}
+
+p {
+    color: #5f687b;
+}
+
+.heroright img {
+    width: 80%;
+}
+
+.heroright img {
+    text-align: right;
+    animation-name: bouncing;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #5f687b;
+
+}
+
+.btn i {
+    color: var(--greencolor) !important;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.intro {
+    display: flex;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h3 {
+    color: var(--headingcolor);
+    font-size: 18px;
+    transition: all .1 ease;
+}
+
+.introcard p {
+    color: rgb(55, 55, 78);
+}
+
+.introcard i {
+    color: var(--greencolor);
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.introcard {
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+
+.introcard:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s ease;
+}
+
+.introcard:hover h3 {
+    color: var(--greencolor);
+}
+
+#pera {
+    font-style: italic;
+}
+
+.about {
+
+    margin: 50px auto;
+    text-align: center;
+
+    color: var(--headingcolor);
+
+}
+
+.hh h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--headingcolor);
+}
+
+.aboutimg img {
+    width: 500px;
+    height: 80%;
+}
+
+.aboutcard {
+    display: flex;
+    gap: 30px;
+}
+
+.abouttext {
+    color: rgb(100, 100, 100);
+}
+
+.abouttext i {
+    color: var(--greencolor);
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.abouttext h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--headingcolor);
+}
+
+.digit {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.digitchild {
+    color: rgb(155, 154, 153);
+}
+
+.digitchild h2 {
+    color: var(--greencolor);
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.services {
+    background-color: #f2f2f2;
+    margin: 0 -74px;
+    padding-bottom: 100px;
+}
+
+.hed {
+    text-align: center;
+}
+
+.hed h2 {
+    color: var(--headingcolor);
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    padding-top: 75px;
+}
+
+.hed .had {
+    padding-bottom: 35px;
+}
+
+.serparent {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 74px;
+
+}
+
+.serchild {
+    background-color: white;
+    border: 1px solid rgb(222, 221, 228);
+    text-align: center;
+    padding: 50px 50px;
+    padding-top: 100px !important;
+    transition: all 1s ease;
+}
+
+.serchild:hover {
+    cursor: pointer;
+    border-color: var(--greencolor);
+}
+
+.serchild:hover h2 {
+    color: var(--greencolor);
+}
+
+
+.serchild i {
+    font-size: 30px;
+    color: white;
+    background-color: var(--greencolor);
+    border-radius: 10px;
+    font-weight: 100;
+    padding: 20px 20px;
+
+}
+
+.serchild h2 {
+    margin: 30px auto;
+    color: var(--headingcolor);
+}
+
+
+
+
+
+
+
+
+
+#portfolio {
+    padding: 100px;
+}
+
+.Portfolionav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+
+}
+
+.Portfolionav a {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    transition: all .5s ease;
+}
+
+#all {
+    color: var(--greencolor);
+}
+
+.Portfolionav a:hover {
+    color: var(--greencolor);
+}
+
+.portfoliochild {
+    display: flex;
+    gap: 25px;
+}
+
+.portfoliocard{
+    width: 350px;
+    margin-top: 30px;
+position: relative;
+
+}
+.portfoliocard img{
+    display: block;
+    width: 100%;
+}
+
+.box {
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    gap: 5px;
+    display: flex;
+    background-color:white;
+    padding: 15px 10px;
+   
+  margin: 0 20px !important;
+    opacity: 0;
+    transition: all .5s ease;
+    position: absolute;
+bottom: -10px;
+width: 300px;
+
+
+}
+
+.portfoliocard:hover  .box {
+    opacity: 1;
+   transform: translateY(-20px);
+}
+
+
+.boxright {
+    text-align: left;
+    font-size: 18px;
+}
+
+
+
+
+
+#testimonials {
+    padding: 0 100px 100px 100px;
+background-color: #f4f4f4;
+}
+
+.testimonialsparent {
+    display: flex;
+    gap: 20px;
+}
+
+#pop {
+    background-color: #e0dede;
+    padding: 20px 20px 70px 20px;
+}
+
+#pop i {
+    color: var(--greencolor);
+    font-size: 20px;
+}
+.testimonialschild{
+    background-color: white;
+}
+
+.testimonialschild img {
+    width: 80px;
+    
+    height: 80px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 15px;
+    margin-top: -30px;
+}
+
+.imgright {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+.call {
+    background-color: var(--greencolor);
+    color: white;
+    padding: 80px;
+    text-align: center;
+    margin: 0 -74px;
+    margin-bottom: 100px;
+}
+
+.callchild {
+    padding-bottom: 35px;
+}
+
+.call h2 {
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.call span {
+    border: 3px solid white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-family: "Nunito Sans";
+    font-size: 17px;
+    font-weight: bolder;
+
+
+}
+
+.call span:hover {
+    background-color: #a6d4be8c;
+}
+
+.teamparent {
+    display: flex;
+    gap: 20px;
+
+}
+
+.teamchild{
+ position: relative;
+
+}
+.teamchild img {
+    width: 100%;
+   
+}
+
+.teamtext {
+    background-color: white;
+    width: 90%;
+    padding: 10px 10px;
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 15px;
+}
+
+#teamtext {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+opacity: 0.7;
+    
+}
+
+.teamparent hr {
+    width: 20%;
+}
+
+#teamtext p {
+    font-style: italic;
+    font-size: 10px;
+    font-weight: 100;
+    margin-right: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#teamtext i {
+    padding: 2px;
+    font-size: 20px;
+    color: var(--headingcolor);
+    margin-bottom: auto 0px;
+   
+
+}
+#team{
+    padding: 50px;
+}
+
+#teamtext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#teamtext i:hover {
+    cursor: pointer;
+}
+.team{
+    display: flex;
+}
+.team-left{
+    background-color: white;
+    width: 35%;
+    padding: 20px 20px;
+}
+iframe{
+    width: 100%;
+    height: 30%;
+}
+.address{
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+  
+}
+.text-box{
+    text-align: left;
+}
+.icon{font-size: 25px;
+    color: var(--greencolor);
+    padding: 10px;
+   
+   
+    font-weight: 100;
+    margin-right: 10px;
+}
+.icon i{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 100%;
+}
+.address:hover .icon i{
+    color: white;
+    background-color: var(--greencolor);
+    background-color: var(--greencolor);
+    border-radius: 100%;
+   padding: 10px;
+
+}
+.right{
+    background-color: white;
+    width: 50%;
+    margin-left: 30px;
+    padding: 30px 20px;
+    box-shadow:red 10px ;
+}
+label{
+    font-size: 20px;
+    color: var(--headingcolor);
+   
+   
+}
+.formname{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    gap: 20px;
+}
+input{
+    padding: 10px 48px;
+}
+label h3{
+    margin-bottom: -20px;
+    text-align: left;
+    color: black;
+    
+    font-weight: 100;
+}
+#subject{
+    text-align: left;
+ margin-bottom: 30px;
+    width: 100%;
+    padding: 15px;
+}
+#ablelast{
+  
+    text-align: left;
+    font-weight: 400;
+}
+#ablelast input{
+    margin-top: 30px;
+    padding: 100px 35%
+}
+#contact{
+    background-color: #fffffffa;
+    padding: 10px 60px;
+}
+#contact .greenbtn{
+    width: 25%;
+    margin: 20px auto;
+}
+#contact .greenbtn:hover{
+    cursor: pointer;
+}
+#join{
+    background-color: #f1f1f1;
+    padding: 10px 100px;
+}
+#news{
+   
+    background-color:white;
+    border-radius: 50px;
+    display: flex;
+    width: 55%;
+    margin: 20px auto;
+    justify-content: end;
+}
+.news{
+    width: 20%;
+  
+}
+.news:hover{
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    font-size: 13px !important;
+    font-weight: 100;
+    gap: 80px;
+    line-height: 2;
+    background-color: white;
+    padding: 40px;
+    margin-left:-100px !important;
+    margin-right: -50px;
+}
+.end{
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 15px !important;
+}
+.ended{
+    margin-left: 150px;
+}
+.end:hover{
+    cursor: pointer;
+}
+.follow p{
+    font-size: 16px !important;
+    color: black !important;
+    display: block;
+    text-align: left;
+}
+.follow span{
+    display: inline-block;
+font-size: 30px;
+font-weight: 100;
+padding: 7px 20px;
+margin-left: -175px;
+
+}
+.follow span i{
+    border: 1px solid rgb(230, 227, 227);
+   padding: 9px;
+    border-radius: 100%;
+}
+.follow span:hover{
+    cursor: pointer;
+}
+#join hr{
+    width: 85%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#last{
+    font-size:14px ;
+    font-weight: 100;
+    color: black !important;
+    opacity: .9;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+.last p{
+    color: var(--greencolor);
+}
+.last p:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*bounce animation*/
+
+@keyframes bouncing {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+
+}
